@@ -13,6 +13,8 @@ npx create-react-app app-aulas
 cd app-aulas
 npm start
 
+npm i bootstrap
+
 /*
 2
 */
