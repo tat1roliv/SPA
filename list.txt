@@ -1,0 +1,18 @@
+/*
+1
+*/
+
+npm install -g npm
+npm init
+npm nome_do_pacote @version-number
+npm update
+
+npm i -g npx
+
+npx create-react-app app-aulas
+cd app-aulas
+npm start
+
+/*
+2
+*/
