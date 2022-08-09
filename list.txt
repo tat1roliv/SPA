@@ -18,3 +18,9 @@ npm i bootstrap
 /*
 2
 */
+
+npx create-react-app teste
+cd teste
+npm start
+
+npm i bootstrap
