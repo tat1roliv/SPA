@@ -19,8 +19,9 @@ npm i bootstrap
 2
 */
 
-npx create-react-app teste
-cd teste
-npm start
+npx create-react-app lista-filmes
 
-npm i bootstrap
++ cria pasta components
++ cria component Header
++ cria component Filme
++ cria component Filmes
