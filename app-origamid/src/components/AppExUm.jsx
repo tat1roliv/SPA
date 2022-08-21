@@ -32,7 +32,7 @@ function AppExUm() {
 
   return (
     <div>
-      <p>exibe dados de objeto selecionado</p>
+      <p>component AppExUm : exibe dados de objeto selecionado</p>
       <p>Nome: { dados.cliente }</p>
       <p>Idade: { dados.idade }</p>
       <p>Total de compras R$: { total } </p>
