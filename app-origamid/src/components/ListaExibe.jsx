@@ -11,7 +11,7 @@ function ListaExibe() {
 
   return (
     <div>
-        <p>component ListaExibe</p>
+        <p>component ListaExibe: exibe lista a partir de condicional</p>
         <ul>
         {livros
             .filter((livro) => livro.ano >= 1998)
