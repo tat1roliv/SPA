@@ -1,9 +1,10 @@
-import './App.css';
+import AppExUm  from './components/AppExUm';
 
 function App() {
+
   return (
-    <div >
-     app-origamid
+    <div>
+      <AppExUm />
     </div>
   );
 }
