@@ -7,12 +7,13 @@ const Form = () => {
   return (
     <form>
         <p>
-            <label htmlFor="nome">Nome</label>
-            <Input />
+            <Input id="nome" label="nome" required/>
         </p>
         <p>
-            <label htmlFor="email">Email</label>
-            <Input />
+            <Input id="email" label="email"/>
+        </p>
+        <p>
+            <Input id="password" type="password" label="password"/>
         </p>
         <Button />
     </form>
