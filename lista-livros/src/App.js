@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ContadorComState from './components/ContadorComState'
 
 export class App extends Component { state = {
 
@@ -22,6 +23,7 @@ render() {
 return (
   <div className="container">
     <h1>Lista de Livros</h1>
+    <ContadorComState />
   </div>
 );
 }
