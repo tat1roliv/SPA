@@ -3,10 +3,14 @@ import { useState } from 'react';
 
 const BtnUseState = () => {
 
-    const [ ativo, setAtivo ] = useState(false);
+    //useState com localstorage para definir o valor inicial
+    const [ ativo, setAtivo ] = useState(() => {
+        const ativo = window.localStorage.getItem('ativo');
+        return ativo;
+    });
 
     const handleAtivo = () => {
-        setAtivo( !ativo );
+        setAtivo( (ativo) => !ativo );//usando callback
     }
 
 
