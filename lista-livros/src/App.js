@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ContadorComState from './components/ContadorComState'
 import InputComState from './components/InputComState';
+import Header from './components/Header';
 
 export class App extends Component { state = {
 
@@ -23,9 +24,10 @@ export class App extends Component { state = {
 render() {
 return (
   <div className="container">
-    <h1>Lista de Livros</h1>
+    <Header title="Lista de Livros2" />
     <ContadorComState />
     <InputComState />
+
   </div>
 );
 }
