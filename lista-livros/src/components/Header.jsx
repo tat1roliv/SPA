@@ -1,17 +1,20 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Header = ( props ) => {
+const Header = ( {title} ) => {
   return (
     <div>
-      <h1>{props.title}</h1>
+      <h1>{title}</h1>
     </div>
   )
 }
 
-// Validando props do componente 
+Header.defaultProps = {
+  title: 'Titulo default',
+}
+
 Header.propTypes = {
   title: PropTypes.string.isRequired,
-  };
+};
 
 export default Header
