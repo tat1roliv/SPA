@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import StarRating from './StarRating.jsx'
 
 const LivroItem = ({ livro }) => {
 
@@ -12,6 +13,7 @@ return (
     <h4>{author}</h4>
     <p>Páginas: {pages}</p>
     <p>Ano da 1ª edição: {year_1st_ed}</p>
+    <StarRating />
 </div>
 );
 };
