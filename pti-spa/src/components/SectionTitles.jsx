@@ -6,7 +6,7 @@ const SectionTitles = ( {title, subtitle} ) => {
     <div className="row justify-content-center align-items-center py-5">
         <div className="col-12 text-center">
             <h1>{title}</h1>
-            <p>{subtitle}</p>
+            <p className="text-muted">{subtitle}</p>
         </div>
     </div>
   );
