@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card.jsx';
+import Card from './Card.js';
 
 import image1 from '../assets/pexels-photo-1.jpeg';
 import image2 from '../assets/pexels-photo-2.jpeg';
