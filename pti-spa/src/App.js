@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import SectionTitles from './components/SectionTitles.js';
-import CardDeck from './components/CardDeck.js'
+import SectionTitles from './components/SectionTitles';
+import CardDeck from './components/CardDeck'
 
 
 function App() {

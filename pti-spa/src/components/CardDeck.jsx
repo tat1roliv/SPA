@@ -1,5 +1,5 @@
 import React from 'react';
-import Card from './Card.js';
+import Card from './Card.jsx';
 
 import image1 from '../assets/pexels-photo-1.jpeg';
 import image2 from '../assets/pexels-photo-2.jpeg';
@@ -29,7 +29,6 @@ const CardDeck = () => {
             description: 'Mass comunication strategies to continue focusing on brand awareness.',
             url: 'https://tatioliveira.tech/',
         },
-
     ]
   return ( 
     <div className="row flex-column flex-lg-row justify-content-center align-items-center">
