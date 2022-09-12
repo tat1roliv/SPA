@@ -14,13 +14,17 @@
 
 //import BtnUseEffect from './components/BtnUseEffect'
 import ReqUseEffect from './components/ReqUseEffect';
+import ProdutosUseEffect from './components/ProdutosUseEffect.jsx'
+import ProdutosReqUseEffect from './components/ProdutosReqUseEffect'
 
 
 function App() {
 
   return (
     <div>
-      <ReqUseEffect />
+
+      <ProdutosUseEffect />
+
 
     </div>
   );
