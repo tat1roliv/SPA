@@ -19,7 +19,7 @@ input{
 }
 
 input {
-    width: 100%;
+    width: 500px;
     padding: 10px;
     border: 1px solid #ccc;
 }
@@ -41,7 +41,7 @@ button:hover{
 }
 
 .form-container {
-    width: 540px;
+    width: 400px;
     display: flex;
     flex-direction: column;
     justify-content: start;
