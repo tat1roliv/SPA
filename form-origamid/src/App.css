@@ -18,7 +18,9 @@ input{
     margin-bottom: 1rem;
 }
 
-input {
+input,
+select,
+textarea {
     width: 500px;
     padding: 10px;
     border: 1px solid #ccc;
