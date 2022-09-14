@@ -2,61 +2,63 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { useState } from 'react';
 
+const formFields = [
+    {
+        id: 'nome',
+        label: 'Nome',
+        type: 'text',
+    },
+    {
+        id: 'email',
+        label: 'Email',
+        type: 'email',
+    },
+    {
+        id: 'senha',
+        label: 'Senha',
+        type: 'password',
+    },
+    {
+        id: 'cep',
+        label: 'Cep',
+        type: 'text',
+    },
+    {
+        id: 'rua',
+        label: 'Rua',
+        type: 'text',
+    },
+    {
+        id: 'numero',
+        label: 'Numero',
+        type: 'text',
+    },
+    {
+        id: 'bairro',
+        label: 'Bairro',
+        type: 'text',
+    },
+    {
+        id: 'cidade',
+        label: 'Cidade',
+        type: 'text',
+    },
+    {
+        id: 'estado',
+        label: 'Estado',
+        type: 'text',
+    },
+]
 
 function FetchForm() {
-
-    const formFields = [
-        {
-            id: 'nome',
-            label: 'Nome',
-            type: 'text',
-        },
-        {
-            id: 'email',
-            label: 'Email',
-            type: 'email',
-        },
-        {
-            id: 'senha',
-            label: 'Senha',
-            type: 'password',
-        },
-        {
-            id: 'cep',
-            label: 'Cep',
-            type: 'text',
-        },
-        {
-            id: 'rua',
-            label: 'Rua',
-            type: 'text',
-        },
-        {
-            id: 'numero',
-            label: 'Numero',
-            type: 'text',
-        },
-        {
-            id: 'bairro',
-            label: 'Bairro',
-            type: 'text',
-        },
-        {
-            id: 'cidade',
-            label: 'Cidade',
-            type: 'text',
-        },
-        {
-            id: 'estado',
-            label: 'Estado',
-            type: 'text',
-        },
-    ]
 
   const [form, setForm] = useState({
     nome: '',
     email: '',
+    senha: '',
+    cep: '',
     rua: '',
+    numero: '',
     bairro: '',
     cidade: '',
     estado: '',
@@ -69,12 +71,13 @@ function FetchForm() {
     fetch('https://ranekapi.origamid.dev/json/api/usuario', {
         method: 'POST',
         headers: {
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(form),
     }).then((response) => { 
+        //console.log(response)
         setResponse(response)
-        console.log(response)
+        
     })
   }
 
@@ -86,7 +89,7 @@ function FetchForm() {
   return (
     <div>
         
-        <form onChange={handleSubmit}
+        <form onSubmit={handleSubmit}
         className="form-container">
           <p>form com fetch</p>
           <br/>
