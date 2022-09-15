@@ -37,6 +37,10 @@ button{
     font-weight:bold;
 }
 
+h1, h2 {
+    display: block;
+}
+
 button:hover{
     background-color: tomato;
     color: #fff;

@@ -7,6 +7,7 @@ import './App.css';
 //import FetchForm from './components/FetchForm'
 import TextArea from './components/TextArea'
 import Select from './components/Select'
+import Radio from './components/Radio'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <div>
         <TextArea />
         <Select />
+        <Radio />
     </div>
   );
 }
