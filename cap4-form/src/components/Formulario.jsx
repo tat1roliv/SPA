@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import FormPopup from './FormPopup';
+import Popup from 'reactjs-popup';
+import 'reactjs-popup/dist/index.css';
 
 const Formulario = () => {
 
@@ -8,19 +11,26 @@ const [departamento, setDepartamento] = useState('');
 const [mensagem, setMensagem] = useState('Digite aqui a requisição...');
 const [error, setError] = useState('');
 const [disabledBtn, setDisabledBtn] = useState(true);
+const [trigger, setTrigger] = useState(false);
+
+let data = {
+    username: username, email: email,
+    departamento: departamento, mensagem: mensagem,
+};
 
 const resetDefault = () => { 
     setUsername('Insira seu nome'); 
+    setEmail('Digite seu e­mail'); 
     setDepartamento('');
-    setMensagem('Digite aqui a requisição...');
+    setMensagem('Digite aqui a requisição...'); 
     setError('');
-    setDisabledBtn(true);
+    setDisabledBtn(true); 
+    setTrigger(false);
 };
     
 const onSubmit = (e) => { 
-    e.preventDefault();
-    alert('Dados enviados com sucesso!'); 
-    resetDefault(); 
+    e.preventDefault(); 
+    setTrigger(true);
     document.getElementById('myForm').reset();
 };
 
@@ -100,6 +110,14 @@ return (
         </button>
     </div>
 </form>
+
+{
+    trigger ? (
+    <FormPopup
+    dados={data} trigger={trigger} removeTrigger={resetDefault}
+    />) : (<div></div>)
+}
+
 </div>
 );
 };
