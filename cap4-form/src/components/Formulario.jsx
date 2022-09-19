@@ -3,13 +3,18 @@ import React, { useState } from 'react';
 const Formulario = () => {
 
 const [username, setUsername] = useState('Insira seu nome');
+const [email, setEmail] = useState('Digite seu e­mail');
 const [departamento, setDepartamento] = useState('');
 const [mensagem, setMensagem] = useState('Digite aqui a requisição...');
+const [error, setError] = useState('');
+const [disabledBtn, setDisabledBtn] = useState(true);
 
 const resetDefault = () => { 
     setUsername('Insira seu nome'); 
     setDepartamento('');
     setMensagem('Digite aqui a requisição...');
+    setError('');
+    setDisabledBtn(true);
 };
     
 const onSubmit = (e) => { 
@@ -17,6 +22,17 @@ const onSubmit = (e) => {
     alert('Dados enviados com sucesso!'); 
     resetDefault(); 
     document.getElementById('myForm').reset();
+};
+
+const validateEmail = () => {
+    var pattern = new RegExp(/.*@.*\..*/i);
+    if (!pattern.test(document.getElementById('emailform').value)) {
+        setError('*Entre com um e­mail válido.');
+        setDisabledBtn(true);
+    } else {
+    setError(''); 
+    setDisabledBtn(false);
+    }
 };
 
 return (
@@ -31,6 +47,24 @@ return (
         placeholder={username}
         onChange={(e) => setUsername(e.target.value)}
         />
+    </div>
+
+    <div className="inputfield">
+        <label htmlFor="emailform" />Email:
+        <div className="inputvalidate">
+            <input
+                type="text" 
+                id="emailform" 
+                name="emailform" 
+                className="input" 
+                placeholder={email} 
+                onChange={ (e) => {
+                    validateEmail(); 
+                    setEmail(e.target.value);
+                } } 
+            />
+            <div className="text­danger">{error}</div>
+        </div>
     </div>
 
     <div className="inputfield form-row mb-3">
@@ -57,7 +91,11 @@ return (
     </div>
 
     <div className="inputfield form-row my-4 px-0">
-        <button className="btn btn-primary" type="submit">
+        <button 
+            className="btn btn-primary" 
+            type="submit"
+            disabled={disabledBtn}
+            >
             Enviar
         </button>
     </div>
