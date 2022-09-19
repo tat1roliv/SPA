@@ -14,8 +14,10 @@ const [disabledBtn, setDisabledBtn] = useState(true);
 const [trigger, setTrigger] = useState(false);
 
 let data = {
-    username: username, email: email,
-    departamento: departamento, mensagem: mensagem,
+    username: username, 
+    email: email,
+    departamento: departamento, 
+    mensagem: mensagem,
 };
 
 const resetDefault = () => { 
@@ -114,7 +116,9 @@ return (
 {
     trigger ? (
     <FormPopup
-    dados={data} trigger={trigger} removeTrigger={resetDefault}
+    dados={data} 
+    trigger={trigger} 
+    removeTrigger={resetDefault}
     />) : (<div></div>)
 }
 
