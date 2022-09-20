@@ -1,10 +1,11 @@
 import { createStore } from 'redux'; 
 import { combineReducers } from 'redux';
+import counterReducer from '../reducers/counterReducer'
 
 const initialState = {};
 
 const reducers = combineReducers({
-// Aqui virá o reducer da aplicação
+    counter: counterReducer,
 });
 
 const store = createStore( 
