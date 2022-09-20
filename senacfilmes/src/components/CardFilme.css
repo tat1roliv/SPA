@@ -1,0 +1,31 @@
+*{
+    font-family: sans-serif;
+}
+
+.card {
+    width: 180px;
+    display:flex;
+    flex-direction: column;
+    background-color: #454545;
+    padding:0;
+    color:white;
+}
+
+.card,
+.card img,
+.card a{
+    border-radius:8px;
+}
+
+.card p {
+    font-weight:bold;
+    font-size:1.2rem;
+    color:white;
+}
+
+.card a{
+    background-color:#ff6600;
+    color:white;
+    padding:.5rem;
+    margin:.5rem;
+}
