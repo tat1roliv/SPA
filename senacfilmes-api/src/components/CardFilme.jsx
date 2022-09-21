@@ -27,7 +27,7 @@ const CardFilme = ({filme}) => {
       <img src={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/"+ filme.poster_path} alt="test"/>
       <p>{filme.name}</p>
       <span>✨ {filme.vote_average}</span>
-      <Link to="/detalhes">Detalhes</Link>
+      <Link to={"/detalhes/"+filme.id}>Detalhes</Link>
       
       
 

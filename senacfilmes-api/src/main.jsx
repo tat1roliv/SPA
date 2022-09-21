@@ -36,7 +36,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <Router>
       <Routes>
         <Route exact path="/" element={ <App/> } />
-        <Route path="/detalhes" element={ <Detalhes filme={filme}/> } />
+        <Route path="/detalhes/:id" element={ <Detalhes filme={filme}/> } />
       </Routes>
     </Router>
     
