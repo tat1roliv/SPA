@@ -15,13 +15,14 @@ const CardFilme = ({filme}) => {
 
   return (
     <div className="card">
+    
       {favorite ? 
         <FavoriteIcon onClick={toogleFavorite} className="icon-favorite"/> 
         : 
         <FavoriteBorderOutlinedIcon onClick={toogleFavorite} className="icon-favorite"/>
       }
       <img src={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/"+ filme.poster_path} alt="test"/>
-      <p>{filme.original_language}</p>
+      <p>{filme.name}</p>
       <span>✨ {filme.vote_average}</span>
       <a href="#">Detalhes</a>
 
