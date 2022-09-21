@@ -30,3 +30,13 @@
     padding:.5rem;
     margin:.5rem;
 }
+
+.card .icon-favorite{
+    position: absolute;
+    padding: 1rem;
+    align-self: flex-end;
+    cursor: pointer;
+}
+.card .icon-favorite:hover{
+    color:red;
+}

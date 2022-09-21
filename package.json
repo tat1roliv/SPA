@@ -15,5 +15,10 @@
   "bugs": {
     "url": "https://github.com/tat1roliv/SPA/issues"
   },
-  "homepage": "https://github.com/tat1roliv/SPA#readme"
+  "homepage": "https://github.com/tat1roliv/SPA#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.4",
+    "@emotion/styled": "^11.10.4",
+    "@mui/material": "^5.10.6"
+  }
 }
