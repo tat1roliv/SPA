@@ -21,8 +21,8 @@ const CardFilme = ({filme}) => {
         <FavoriteBorderOutlinedIcon onClick={toogleFavorite} className="icon-favorite"/>
       }
       <img src={"https://www.themoviedb.org/t/p/w600_and_h900_bestv2/"+ filme.poster_path} alt="test"/>
-      <p>{filme.title}</p>
-      <span>✨ {filme.score}</span>
+      <p>{filme.original_language}</p>
+      <span>✨ {filme.vote_average}</span>
       <a href="#">Detalhes</a>
 
     </div>
